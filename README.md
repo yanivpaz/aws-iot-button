@@ -60,9 +60,10 @@ aws iot describe-endpoint --endpoint-type iot:Data-ATS
 
 ### Connect the button to WIFI
 
-1. push the AWS button for 8 seconds , and wait for the blue light to blink
-2. connect to the newly created wifi "configure me..."
-3. the password is the last 8 digits of the serial number , on the back of the AWS button device
+1. Push the AWS button for 6 seconds , and wait for the blue light to flash 
+2. Connect to the newly created wifi "configure me..."
+3. The password is the last 8 digits of the serial number , on the back of the AWS button device
+
 
 
 # Resources
