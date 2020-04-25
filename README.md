@@ -1,6 +1,8 @@
 # aws-iot-button setup 
 
 
+![Image of previous iot](pics/iot-button.jpg)
+
 ## AWS account setup
 from AWS IOT core service , perform the following steps
 
