@@ -1,12 +1,15 @@
 # aws-iot-button setup 
 
 
+## Under the hood 
+
+
 ![Image of previous iot](pics/iot-button.jpg)
 
-## AWS account setup
+### AWS account setup
 from AWS IOT core service , perform the following steps
 
-### Create policy
+* Create policy
 ```
 aws iot create-policy \
     --policy-name MyIOTButtonPolicy \
@@ -27,24 +30,24 @@ where policy.json is
 }
 ```
 
-### Create certificate
+*  Create certificate
 ```
 aws iot create-keys-and-certificate   \
 --certificate-pem-outfile "myIOTButton.cert.pem"    \
 --public-key-outfile "myIOTButton.public.key"   \
 --private-key-outfile "myIOTButton.private.key"
 ```
-Attach the security policy to the certificate 
+* Attach the security policy to the certificate 
 
 
-### Create thing type
+* Create thing type
 ```
 aws iot create-thing-type \
     --thing-type-name "IOTButton" \
     --thing-type-properties "thingTypeDescription=AWS IOT button v1, searchableAttributes=wattage,model"
 ```
 
-### Create thing
+* Create thing
 ```
 aws iot create-thing \
     --thing-name "MyIOTButton" \
@@ -53,19 +56,17 @@ aws iot create-thing \
 attach certificate to the thing 
 
 
-### Get IOT Gateway URL in the IOT Button 
+*  Get IOT Gateway URL in the IOT Button 
 GET the IOT UTL , which will be used later to setup the button 
 ```
 aws iot describe-endpoint --endpoint-type iot:Data-ATS
 ```
 
-### Connect the button to WIFI
-
+*  Connect the button to WIFI
 1. Push the AWS button for 6 seconds , and wait for the blue light to flash 
 2. Connect to the newly created wifi "configure me..."
 3. The password is the last 8 digits of the serial number , on the back of the AWS button device
 
-
-
-# Resources
 * https://www.youtube.com/watch?v=oIPsQhStbnY
+
+
