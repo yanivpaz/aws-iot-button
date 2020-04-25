@@ -1,6 +1,5 @@
-# aws-iot-button setup - the hard way ( but not the hardest) 
-it is possible to connect the AWS button by using AWS IOT app on mobile .
-However , in order to 
+# aws-iot-button setup 
+
 
 ## AWS account setup
 from AWS IOT core service , perform the following steps
