@@ -13,6 +13,11 @@ aws iot create-thing-type \
 ```
 
 ### Create thing
+```
+aws iot create-thing \
+    --thing-name "MyIOTButton" \
+    --thing-type-name "IOTButton" 
+```
 
 ### Create certificate
 
