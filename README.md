@@ -5,7 +5,14 @@ However , in order to
 
 ## Setup
 
-### Create thing 
+### Create thing type
+```
+aws iot create-thing-type \
+    --thing-type-name "IOTButton" \
+    --thing-type-properties "thingTypeDescription=AWS IOT button v1, searchableAttributes=wattage,model"
+```
+
+### Create thing
 
 ### Create certificate
 
