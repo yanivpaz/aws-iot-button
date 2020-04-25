@@ -10,7 +10,10 @@ However , in order to
 ### Create certificate
 
 ```
-aws iot create-keys-and-certificate     --certificate-pem-outfile "myIOTButton.cert.pem"     --public-key-outfile "myIOTButton.public.key"     --private-key-outfile "myIOTButton.private.key"
+aws iot create-keys-and-certificate   \
+--certificate-pem-outfile "myIOTButton.cert.pem"    \
+--public-key-outfile "myIOTButton.public.key"   \
+--private-key-outfile "myIOTButton.private.key"
 ```
 
 ### Connect the button to WIFI
