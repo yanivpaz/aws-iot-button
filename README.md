@@ -35,7 +35,10 @@ aws iot create-keys-and-certificate   \
 3. the password is the last 8 digits of the serial number , on the back of the AWS button device
 
 
-
+```
+aws iot describe-endpoint \
+>     --endpoint-type iot:Data-ATS
+```
 
 # Resources
 * https://www.youtube.com/watch?v=oIPsQhStbnY
