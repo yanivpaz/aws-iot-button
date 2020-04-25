@@ -19,6 +19,13 @@ aws iot create-thing \
     --thing-type-name "IOTButton" 
 ```
 
+### Create policy
+```
+aws iot create-policy \
+    --policy-name MyIOTButtonPolicy \
+    --policy-document file://policy.json
+```
+
 ### Create certificate
 
 ```
